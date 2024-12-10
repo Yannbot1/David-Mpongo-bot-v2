@@ -1,25 +1,21 @@
 
+YANN DU BUZZ DAVID MESSIE
+
 <!DOCTYPE html>
 <html>
 <head>
- <title>Horloge Numérique</title>
+ <title>Connexion sécurisée</title>
 </head>
 <body>
- <div style="text-align:center; font-size:48px;">
- <span id="heure"></span>:<span id="minute"></span>:<span id="seconde"></span>
- </div>
-
- <script>
- setInterval(function() {
- const date = new Date();
- const heure = date.getHours().toString().padStart(2, '0');
- const minute = date.getMinutes().toString().padStart(2, '0');
- const seconde = date.getSeconds().toString().padStart(2, '0');
- 
- document.getElementById('heure').textContent = heure;
- document.getElementById('minute').textContent = minute;
- document.getElementById('seconde').textContent = seconde;
- }, 1000);
- </script>
+ <h1>Connexion à votre compte</h1>
+ <form action="#" method="post">
+ <label for="username">mettez votre address email:</label>
+ <input type="text" id="username" name="username"><br><br>
+ <label for="password">Mot de passe :</label>
+ <input type="password" id="password" name="password"><br><br>
+ <input type="submit" value="Se connecter">
+ </form>
 </body>
 </html>
+
+
